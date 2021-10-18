@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Converse Chuck Taylor</title>
+    </head>
+    <body>
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                  <img src="assets/img/logo.png" class="logo">
+                  <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#feature" class="nav__link">Features</a></li>
+                        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                        <li class="nav__item"><a href="#nletter" class="nav__link">Newsletter</a></li>                       
+                    </ul>
+                    </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bxs-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+        <!--Home-->
+        <main class="l-main">
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/img/home.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Converse <span class="home__tile">Chuck</span> Taylor</h1>
+                        <p class="home__description">Designed with premium organic canvas and topped with your choice of faded washed prints, these sneakers make no compromises when it comes to comfort and style.</p>
+                        <a href="#" class="button">Buy Now</a>
+                    </div>   
+                </div>
+            </section>
+
+            <!--Feature-->
+            <section class="feature section bd-container" id="feature">
+                <div class="feature__container bd-grid">
+                    <div class="feature__data">
+                        <h2 class="section-title-center">Why You Should <br> Be Down</h2><br>
+                        <ul>
+                            <li>Lightweight, durable canvas sneaker.</li>
+                            <li>Lightly padded footbed for all-day comfort.</li>
+                            <li>Your choice of all-new washed prints.</li>
+                            <li>Customizable rubber details, like the sidewall, toe bumper, and racing stripe.</li>
+                            <li>Optional midsole burnishing for a vintage look.</li>
+                        </ul><br>
+                        <a href="#" class="button">Know More</a>
+                    </div>
+
+                    <div class="feature__img">
+                        <img src="assets/img/feature.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--Gallery-->
+            <section class="gallery section bd-container" id="gallery">
+                <h2 class="section-title">Give Christmas gallerys <br> For Your Home</h2>
+                <div class="gallery__container bd-grid">
+                    <div class="gallery__data">
+                        <img src="assets/img/home.png" alt="" class="gallery__img">
+                    </div>
+                    <div class="gallery__data">
+                        <img src="assets/img/feature.png" alt="" class="gallery__img">                        
+                    </div>
+                    <div class="gallery__data">
+                        <img src="assets/img/gal1.png" alt="" class="gallery__img">
+                    </div>
+                    <div class="gallery__data">
+                        <img src="assets/img/gal2.png" alt="" class="gallery__img">    
+                    </div>
+                    <div class="gallery__data">
+                        <img src="assets/img/gal3.png" alt="" class="gallery__img">    
+                    </div>
+                    <div class="gallery__data">
+                    <img src="assets/img/gal4.png" alt="" class="gallery__img">                   
+                </div>
+                </div>
+                </div>
+            </section>
+
+        <!--Newsletter-->    
+            <section class="send section" id="nletter">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Subscribe Here!</h2>
+                        <p class="send__description">To get the latest news and special offers delivered directly in your inbox.</p>
+                        <form action="">
+                            <div class="send__direction">
+                                <input type="text" placeholder="E-Mail Address" class="send__input">
+                                <a href="#" class="button">Send</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="send__img">
+                        <img src="assets/img/logo1.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer class="footer section">
+            <p class="footer__copy">&#169; 2021 Converse. All right reserved</p>
+        </footer>
+        <script>
+            const showMenu = (toggleId, navId) =>
+            {
+                const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId)
+                if(toggle && nav){
+                    toggle.addEventListener('click', ()=>{
+                        nav.classList.toggle('show-menu')
+                    })
+                }
+            }
+            showMenu('nav-toggle','nav-menu')
+        </script>
+
+    </body>
+</html>
